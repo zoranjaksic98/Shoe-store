@@ -1,0 +1,23 @@
+﻿<Window x:Class="ProdavnicaObuce_IT34_2024.Forme.FrmPorudzbina"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProdavnicaObuce_IT34_2024.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni porudzbinu" Height="290" Width="300">
+    <Grid Background="AliceBlue">
+        <Label Content="Datum porudžbine" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Broj komada obuće" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Popust na kupovinu" HorizontalAlignment="Left" Margin="30,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Iznos porudžbine" HorizontalAlignment="Left" Margin="30,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Račun" HorizontalAlignment="Left" Margin="30,140,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpDatum" HorizontalAlignment="Right" Margin="30,17,30,0" VerticalAlignment="Top" Height="23" Width="120"/>
+        <TextBox x:Name="TxtBrojKomadaObuce" HorizontalAlignment="Left" Margin="150,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <CheckBox x:Name="cbxPopust" Content="" HorizontalAlignment="Left" Margin="150,85,30,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxtIznosPorudzbine" HorizontalAlignment="Left" Margin="150,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <ComboBox x:Name="CbRacun" HorizontalAlignment="Left" Margin="150,140,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="racunID" DisplayMemberPath="brojRacuna"/>
+        <Button x:Name="BtnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="30,200,0,0" Width="75" VerticalAlignment="Top" Click="BtnSacuvaj_Click"/>
+        <Button x:Name="BtnOtkazi" Content="Otkaži" HorizontalAlignment="Right" Margin="30,200,30,0" Width="75" VerticalAlignment="Top" Click="BtnOtkazi_Click"/>
+    </Grid>
+</Window>

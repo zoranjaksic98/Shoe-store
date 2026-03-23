@@ -1,0 +1,15 @@
+﻿<Window x:Class="ProdavnicaObuce_IT34_2024.Forme.FrmKolekcija"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProdavnicaObuce_IT34_2024.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni kolekciju" Height="250" Width="300">
+    <Grid Background="AliceBlue">
+        <Label Content="Naziv kolekcije" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxtNazivKolekcije" HorizontalAlignment="Left" Margin="150,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <Button x:Name="BtnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="30,150,0,0" Width="75" VerticalAlignment="Top" Click="BtnSacuvaj_Click"/>
+        <Button x:Name="BtnOtkazi" Content="Otkaži" HorizontalAlignment="Right" Margin="30,150,30,0" Width="75" VerticalAlignment="Top" Click="BtnOtkazi_Click"/>
+    </Grid>
+</Window>

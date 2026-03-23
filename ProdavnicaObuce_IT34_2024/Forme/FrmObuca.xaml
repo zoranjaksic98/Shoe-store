@@ -1,0 +1,31 @@
+﻿<Window x:Class="ProdavnicaObuce_IT34_2024.Forme.FrmObuca"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProdavnicaObuce_IT34_2024.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni obucu" Height="420" Width="300">
+    <Grid Background="AliceBlue">
+        <Label Content="Cena" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Boja" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Veličina" HorizontalAlignment="Left" Margin="30,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Proizvođač" HorizontalAlignment="Left" Margin="30,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Vrsta" HorizontalAlignment="Left" Margin="30,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kategorija" HorizontalAlignment="Left" Margin="30,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kolekcija" HorizontalAlignment="Left" Margin="30,200,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kupac" HorizontalAlignment="Left" Margin="30,230,0,0" VerticalAlignment="Top"/>
+        <Label Content="Porudžbina" HorizontalAlignment="Left" Margin="30,260,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxtCena" HorizontalAlignment="Left" Margin="150,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <TextBox x:Name="TxtBoja" HorizontalAlignment="Left" Margin="150,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <TextBox x:Name="TxtVelicina" HorizontalAlignment="Left" Margin="150,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="120"/>
+        <ComboBox x:Name="CbProizvodjac" HorizontalAlignment="Left" Margin="150,110,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="proizvodjacID" DisplayMemberPath="ime"/>
+        <ComboBox x:Name="CbVrsta" HorizontalAlignment="Left" Margin="150,140,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="vrstaID" DisplayMemberPath="nazivVrste"/>
+        <ComboBox x:Name="CbKategorija" HorizontalAlignment="Left" Margin="150,170,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="kategorijaID" DisplayMemberPath="vrstaKategorije"/>
+        <ComboBox x:Name="CbKolekcija" HorizontalAlignment="Left" Margin="150,200,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="kolekcijaID" DisplayMemberPath="nazivKolekcije"/>
+        <ComboBox x:Name="CbKupac" HorizontalAlignment="Left" Margin="150,230,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="kupacID" DisplayMemberPath="kupac"/>
+        <ComboBox x:Name="CbPorudzbina" HorizontalAlignment="Left" Margin="150,260,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="porudzbinaID" DisplayMemberPath="datumPorudzbine"/>
+        <Button x:Name="BtnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="30,330,0,0" Width="75" VerticalAlignment="Top" Click="BtnSacuvaj_Click"/>
+        <Button x:Name="BtnOtkazi" Content="Otkaži" HorizontalAlignment="Right" Margin="30,330,30,0" Width="75" VerticalAlignment="Top" Click="BtnOtkazi_Click"/>
+    </Grid>
+</Window>
